@@ -1,4 +1,6 @@
 .DS_Store
 supplementals/*
-.ipynb_checkpoints/*
+.ipynb_checkpoints/
+src/.ipynb_checkpoints/*
 src/__pycache__/*
+*.ipynb

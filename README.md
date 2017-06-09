@@ -1,22 +1,27 @@
 Least Squares Regression with Elastic Net Regularization
 =================
 
-Polished code release for DATA 558, University of Washington, Spring 2017
-
 This repository contains my own implementation of least-squares regression with elastic net regularization. I originally wrote this code for the take-home portion of my DATA 558 Midterm in Spring 2017. I subsequently enhanced the code and released it on GitHub as part of the final assignment for the course.
 
-Elastic Net is a hybrid between the popular ℓ2 (Ridge) and ℓ1 (LASSO) regularization; the minimization problem writes as follows:
+Elastic net is a hybrid approach between the ever-popular ℓ1 (LASSO) and ℓ2 (Ridge) regularization methods; the minimization problem writes as follows:
 
-min F(β) = 1/n * ||Y − XTβ||^2 +λ α||β||1 +(1−α)||β||^2 2)
+min F(β) = 1/n * ||Y − XTβ||2^2 +λ α||β||1 +(1−α)||β||2^2)
 β∈Rd
 
-where α ∈ (0, 1), with the two extremes producing Ridge and Lasso, respectively.
+where α ∈ (0, 1), with the two extremes equating to the Ridge and LASSO problems, respectively.
 
-Because of the ℓ1 component, this function is non-differentiable and the solution must be achieved through use of the subgradient. As a result, we are unable to use gradient descent and must instead leverage coordinate descent.
+Because of the ℓ1 component (i.e. λ α||β||1), the objective function above is non-differentiable and therefore cannot be minimized by gradient descent. Instead, we leverage the subgradient of the absolute value function to define a soft-thresholding operator which we use to minimize the objective function with respect to one coordinate at a time. This process is known as coordinate descent.
 
-I provide functions to solve this problem. Examples include:
+I provide a function called `coorddescent` which solves the coordinate descent algorithm described above. The function includes two :
 
-* **Demo 1:** Simulated dataset
-* **Demo 2:** Real-world dataset
-* **Demo 3:** Comparison to scikit-learn
+* **cyclic:** proceeds sequentially through each coordinate, returning to the first coordinate after all coordinates have been updated
+* **random:** proceeds randomly through the coordinates
 
+This repository contains the following:
+
+```
+src/coorddescent.py
+Demo 1: Simulated dataset
+Demo 2: Real-world dataset
+Demo 3: Comparison to scikit-learn
+```
