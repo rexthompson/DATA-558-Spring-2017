@@ -43,10 +43,18 @@ To use the code in this repository:
 * clone the repository
 * navigate to the main directory (i.e. that which contains this README.md file)
 * launch python
-* enter `import src.coorddescent` (or optionally, `import src.coorddescent as cd` or whatever shorthand you prefer)
+* enter `import src.coorddescent` (or `... as cd` or whatever shorthand you prefer)
 
-The functions will now be available to you in python by typing `src.coorddescent.<function_name>` (or `cd.<function_name>` if you use the shorthand recommended in the last bullet above).
+The functions from `coorddescent.py` should now be available to you in Python by typing `src.coorddescent.<function_name>` (or `cd.<function_name>` if you use the shorthand recommended in the last bullet above).
 
-References:
+This code was developed in Python 3.6.0; functionality is not guaranteed for older versions. You may need to install the following dependencies if they do not already exist on your machine:
+
+* copy
+* matplotlib.pyplot
+* numpy
+* pandas
+* sklearn.metrics.mean_squared_error
+
+#### References
 
 Hastie, Trevor J., Robert John Tibshirani, and Martin J. Wainwright. "4.2." _Statistical Learning with Sparsity: The Lasso and Generalizations._ Boca Raton: CRC, Taylor & Francis Group, 2015. N. pag. Print.
