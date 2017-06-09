@@ -1,7 +1,7 @@
 Least Squares Regression with Elastic Net Regularization
 =================
 
-This repository contains my own implementation of least-squares regression with elastic net regularization.
+This repository contains my own Python implementation of least-squares regression with elastic net regularization.
 
 Elastic Net
 ----------------
@@ -12,6 +12,8 @@ The elastic net least-squares minimization problem writes as follows:
 
 min F(β) = 1/n * ||Y − XTβ||2^2 + λα||β||1 + (1 − α)||β||2^2)
 β∈Rd
+
+![alt text](https://github.com/rexthompson/DATA-558-Spring-2017/blob/master/images/ElasticNet.png "Objective Function")
 
 where α ∈ [0, 1], with the two extremes equating to the Ridge and LASSO problems, respectively.
 
