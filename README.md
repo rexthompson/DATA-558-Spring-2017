@@ -10,7 +10,7 @@ The elastic net is a hybrid approach between the ever-popular ℓ1 (LASSO) and s
 
 The elastic net least-squares minimization problem writes as follows:
 
-<img src=https://github.com/rexthompson/DATA-558-Spring-2017/blob/master/images/ElasticNet.png alt="Objective Function" width="500" height="75" />
+<img src=https://github.com/rexthompson/DATA-558-Spring-2017/blob/master/images/ElasticNet.png alt="Objective Function" width="500" height="60" />
 
 where α ∈ [0, 1], with the two extremes equating to the Ridge and LASSO problems, respectively.
 
