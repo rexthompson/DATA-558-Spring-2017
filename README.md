@@ -10,14 +10,11 @@ Elastic net is a hybrid approach between the ever-popular ℓ1 (LASSO) and squar
 
 The elastic net least-squares minimization problem writes as follows:
 
-min F(β) = 1/n * ||Y − XTβ||2^2 + λα||β||1 + (1 − α)||β||2^2)
-β∈Rd
-
-![alt text](https://github.com/rexthompson/DATA-558-Spring-2017/blob/master/images/ElasticNet.png "Objective Function")
+<img src=https://github.com/rexthompson/DATA-558-Spring-2017/blob/master/images/ElasticNet.png alt="Objective Function" width="500" height="75" />
 
 where α ∈ [0, 1], with the two extremes equating to the Ridge and LASSO problems, respectively.
 
-Because of the ℓ1 component (i.e. λα||β||1), the objective function above is non-differentiable and therefore cannot be minimized by gradient descent. Instead, we leverage the subgradient of the absolute value function (from the ℓ1 term) to define a soft-thresholding operator which is used to minimize the objective function one coordinate at a time. This process is known as coordinate descent.
+Because of the ℓ1 component, the objective function above is non-differentiable and therefore cannot be minimized by gradient descent. Instead, we leverage the subgradient of the absolute value function to define a soft-thresholding operator which is used to minimize the objective function one coordinate at a time. This process is known as coordinate descent.
 
 This Repository
 ----------------
