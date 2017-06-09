@@ -7,7 +7,7 @@ This repository contains my own implementation of least-squares regression with 
 
 Elastic Net is a hybrid between the popular ℓ2 (Ridge) and ℓ1 (LASSO) regularization; the minimization problem writes as follows:
 
-min F(β) = 1/n * (Y − XTβ)^2 +λ α||β||1 +(1−α)||β||2)
+min F(β) = 1/n * ||Y − XTβ||^2 +λ α||β||1 +(1−α)||β||^2 2)
 β∈Rd
 
 where α ∈ (0, 1), with the two extremes producing Ridge and Lasso, respectively.
