@@ -6,7 +6,7 @@ This repository contains my own Python implementation of least-squares regressio
 Elastic Net
 ----------------
 
-The elastic net is a hybrid approach between the ever-popular ℓ1 (LASSO) and squared ℓ2 (Ridge) regularization penalties. It is capable of mitigating some of LASSO's weaknesses (e.g. correlated variables, p > n) while still maintaining its desirable variable selection capabilities.
+The elastic net is a hybrid approach between the ever-popular ℓ1 (LASSO) and squared ℓ2 (Ridge) regularization penalties. It is capable of mitigating some of LASSO's weaknesses (correlated variables, p > n) while still maintaining its desirable variable selection capabilities.
 
 The elastic net least-squares minimization problem writes as follows:
 
