@@ -16,24 +16,31 @@ Because of the ℓ1 component (i.e. λα||β||1), the objective function above i
 
 ---
 
-This repository contains Python code for solving the minimization problem above. Specifically, I provide a function called `coorddescent` which solves the coordinate descent algorithm above in one of two ways:
+This repository contains Python code for solving the minimization problem described above. Specifically, I provide a function called `coorddescent` which solves the coordinate descent algorithm above in one of two ways:
 
 * **cyclic:** proceeds sequentially through each coordinate, returning to the first coordinate after all coordinates have been updated; repeats until stopping criterion achieved
 * **random:** proceeds randomly through the coordinates; repeats until stopping criterion achieved
 
-I also include the following sub-functions:
-
-
-
-I provide the following examples which demonstrate the capabilities of the code:
+I also include several additional functions which are either called by `coorddescent` or are useful for visualizing how the algorithm arrives at its solutions. I demonstrate the functionality of my code in the following examples:
 
 ```
-Demo 1: Simulated dataset
-Demo 2: Real-world dataset
-Demo 3: Comparison to scikit-learn
+Demo 1: Coordinate descent on a simulated dataset
+Demo 2: Coordinate descent on a "real-world" dataset
+Demo 3: Comparison of my functions to scikit-learn
 ```
 
 I wrote most of this code for the take-home portion of my DATA 558 Midterm in Spring 2017. I subsequently enhanced and cleaned the code prior to releasing it on GitHub as part of the final Polished Code Release assignment for the course.
 
+Installation
+-----------
 
-Installation...?
+Follow these instructions if you would like to use this code:
+
+* Clone this repository
+* navigate to the main directory (i.e. that which contains this README.md file)
+* launch python
+* enter `import src.coorddescent` (or optionally, `import src.coorddescent as cd`)
+
+The functions will be available to you by typing `src.coorddescent.<function_name>` (or `cd.<function_name>` if you use the shorthand recommended in the last bullet above).
+
+Happy coding!
