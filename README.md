@@ -1,7 +1,11 @@
 Least Squares Regression with Elastic Net Regularization
 =================
 
-This repository contains my own implementation of least-squares regression with elastic net regularization. I originally wrote this code for the take-home portion of my DATA 558 Midterm in Spring 2017. I subsequently enhanced the code and released it on GitHub as part of the final assignment for the course.
+This repository contains my own implementation of least-squares regression with elastic net regularization.
+
+I wrote most of this code for the take-home portion of my DATA 558 Midterm in Spring 2017. I subsequently enhanced and cleaned the code prior to releasing it on GitHub as part of the final Polished Code Release assignment for the course.
+
+---------------
 
 Elastic net is a hybrid approach between the ever-popular ℓ1 (LASSO) and ℓ2 (Ridge) regularization methods; the minimization problem writes as follows:
 
@@ -21,6 +25,7 @@ This repository contains the following:
 
 ```
 src/coorddescent.py
+data/Hitters.csv
 Demo 1: Simulated dataset
 Demo 2: Real-world dataset
 Demo 3: Comparison to scikit-learn
