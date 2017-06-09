@@ -1,4 +1,4 @@
-DATA 558 - Least Squares Regression with Elastic Net Regularization
+Least Squares Regression with Elastic Net Regularization
 =================
 
 Polished code release for DATA 558, University of Washington, Spring 2017
