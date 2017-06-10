@@ -24,7 +24,7 @@ This repository contains Python code for solving the minimization problem descri
 * **cyclic:** proceeds sequentially through each coordinate, returning to the first coordinate after all coordinates have been updated; repeats until stopping criterion achieved
 * **random:** proceeds randomly through the coordinates; repeats until stopping criterion achieved
 
-`src/coorddescent.py` also includes several supplemental functions which are either called by `coorddescent` or are useful for visualizing how the algorithm arrives at its solution.
+`src/coorddescent.py` also includes several supplemental functions which are either called by `coorddescent` or are useful for visualizing how the algorithm arrives at its solution. I also include a cross-validation function (`coorddescentCV`).
 
 Please refer to the following examples in which I demonstrate the functionality of the code in this repository:
 
