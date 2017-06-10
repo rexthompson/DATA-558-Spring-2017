@@ -28,9 +28,9 @@ This repository contains Python code for solving the minimization problem descri
 
 Please refer to the following examples in which I demonstrate the functionality of the code in this repository:
 
-* **[Demo 1](./Demo 1 - Simulated Data.ipynb):** Coordinate descent on a simulated dataset
-* **Demo 2:** Coordinate descent on a "real-world" dataset
-* **Demo 3:** Comparison of my functions to those from scikit-learn
+* [**Demo 1**](https://github.com/rexthompson/DATA-558-Spring-2017/blob/master/Demo%201%20-%20Simulated%20Data.ipynb)**:** Coordinate descent on a simulated dataset
+* [**Demo 2**](https://github.com/rexthompson/DATA-558-Spring-2017/blob/master/Demo%202%20-%20Real%20World%20Data.ipynb)**:** Coordinate descent on a "real-world" dataset
+* [**Demo 3**](https://github.com/rexthompson/DATA-558-Spring-2017/blob/master/Demo%203%20-%20Comparison%20to%20Scikit-learn.ipynb)**:** Comparison of my functions to those from scikit-learn
 
 I wrote most of this code for the take-home portion of my DATA 558 Midterm in Spring 2017. I subsequently enhanced and cleaned the code prior to releasing it on GitHub as part of the Polished Code Release assignment for the course.
 
