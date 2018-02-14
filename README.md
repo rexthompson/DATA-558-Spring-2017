@@ -1,7 +1,7 @@
 Least Squares Regression with Elastic Net Regularization
 =================
 
-This repository contains my own Python implementation of least-squares regression with elastic net regularization.
+This repository contains my own Python implementation of least-squares regression with elastic net regularization. This work was performed for the Polished Code Release assignment for DATA 558 (Machine Learning), University of Washington, Spring 2017.
 
 Elastic Net
 ----------------
